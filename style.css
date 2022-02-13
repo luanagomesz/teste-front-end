@@ -1,0 +1,267 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+figure {
+  margin: 0px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 115px;
+}
+header nav .mobile-nav {
+  display: none;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+
+header nav ul li {
+  margin-top: 2px;
+  margin-right: 25px;
+  color: #666666;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+header nav ul li:hover {
+  color: #131313;
+  border-bottom: 2px solid #ec964b;
+  padding-bottom: 0px;
+}
+
+#header-user {
+  display: flex;
+  align-items: center;
+}
+#header-user img {
+  margin-right: 15px;
+  cursor: pointer;
+}
+#header-user img:hover {
+  filter: contrast(125%);
+}
+#header-user div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header-user a {
+  font-size: 15px;
+  cursor: pointer;
+}
+#header-user a:link {
+  color: #ec964b;
+}
+
+#header-user a:visited {
+  color: #ec964b;
+}
+
+#header-user div span {
+  cursor: pointer;
+}
+main {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ec964b;
+  background: linear-gradient(to bottom, #ec964b 25%, #ffffff 25%);
+}
+
+#content {
+  margin-top: 60px;
+  width: 80%;
+  height: 65vh;
+  max-width: 1025px;
+  min-width: 320px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 14px -3px rgba(0, 0, 0, 0.8);
+  min-height: 550px;
+  max-height: 640px;
+}
+#content p {
+  margin-top: 50px;
+  width: 80%;
+  text-align: center;
+}
+.container-cards {
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.container-cards .card {
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  width: 250px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffffff 30%, #d8d8d8 100%);
+  margin-right: 30px;
+}
+
+.container-cards .card:last-child {
+  margin-right: 0px;
+}
+.container-cards .card:hover {
+  filter: contrast(95%);
+  cursor: pointer;
+}
+.container-cards .card figcaption {
+  position: absolute;
+  margin-top: 150px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: rgb(187, 187, 187);
+  min-height: 50px;
+  margin-top: auto;
+  font-size: 12px;
+}
+footer p {
+  color: #ee882e;
+
+  margin-right: 10px;
+}
+.modal-container {
+  background-color: rgba(51, 51, 51, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+.modal-container .modal img {
+  width: 320px;
+}
+.modal-container .modal {
+  background-color: white;
+  min-width: fit-content;
+  min-height: 50%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (max-width: 1055px) {
+  .modal-container .modal {
+    width: 320px;
+  }
+  .modal-container .modal img {
+    width: 200px;
+  }
+  header {
+    height: 80px;
+  }
+
+  header img[alt~="logo"] {
+    margin-left: 20px;
+    width: 150px;
+  }
+  header nav .desktop-nav {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+  }
+  header nav .mobile-nav {
+    display: block;
+  }
+  header nav img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  #header-user {
+    margin-right: 0px;
+  }
+  #header-user .user {
+    display: none;
+  }
+  #content {
+    margin-top: 15px;
+    min-height: 500px;
+  }
+  #content p {
+    margin-top: 15px;
+  }
+  .container-cards {
+    margin-top: 10px;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .container-cards .card {
+    width: 150px;
+    height: 125px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .container-cards .card img {
+    width: 70px;
+    height: auto;
+  }
+  .container-cards .card figcaption {
+    margin-top: 100px;
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 350px) {
+  header .mobile-nav:first-child {
+    display: none;
+  }
+}

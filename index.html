@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Teste Front-end</title>
+    <script src="script.js" async></script>
+  </head>
+  <body id="body">
+    <header>
+      <img src="./imgs/logo.png" alt="logo" />
+      <nav>
+        <p class="mobile-nav">Menu</p>
+        <img
+          class="mobile-nav button"
+          src="./imgs/menu-hamburguer.png"
+          alt=""
+        />
+        <ul class="desktop-nav">
+          <li class="button">Home</li>
+          <li class="button">Eventos</li>
+          <li class="button">Usuários</li>
+          <li class="button">Relatórios</li>
+        </ul>
+      </nav>
+      <div id="header-user">
+        <img src="./imgs/user.png" alt="user" />
+
+        <div class="user">
+          <span>Luana Gomes</span> <a href="">Desconectar</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="content">
+        <p>Olá <b>Luana Gomes, </b>selecione uma das opções abaixo:</p>
+        <div class="container-cards">
+          <figure class="card button">
+            <img src="./imgs/icone-eventos.png" alt="Eventos" />
+            <figcaption>Meus Eventos</figcaption>
+          </figure>
+          <figure class="card button">
+            <img src="./imgs/icone-usuarios.png" alt="Usuários" />
+            <figcaption>Usuários</figcaption>
+          </figure>
+          <figure class="card button">
+            <img src="./imgs/icone-relatorios.png" alt="Relatórios" />
+            <figcaption>Relatórios</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Ideia 2001</p>
+      <span>@ Copyrigth 2019 - Todos os direitos reservados</span>
+    </footer>
+  </body>
+</html>
